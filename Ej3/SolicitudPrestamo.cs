@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    public interface IEvaluador
+    class SolicitudPrestamo
     {
-        public abstract bool EsValida(SolicitudPrestamo pSolicitud);
+        private double iMonto;
+        private int iCantidadCuotas;
     }
 }
