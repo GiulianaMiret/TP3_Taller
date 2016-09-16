@@ -8,5 +8,16 @@ namespace Ej3
 {
     class EvaluadorAntiguedadLaboral : IEvaluador
     {
+        private int iAntiguedadMinima;
+
+        public EvaluadorAntiguedadLaboral (int pAntiguedadMinima)
+        {
+            this.iAntiguedadMinima = pAntiguedadMinima;
+        }
+
+        public bool EsValida (SolicitudPrestamo pSolicitud)
+        {
+            return true; //Falta el metodo
+        }
     }
 }

@@ -8,6 +8,6 @@ namespace Ej3
 {
     public interface IEvaluador
     {
-        public abstract bool EsValida(SolicitudPrestamo pSolicitud);
+        abstract bool EsValida(SolicitudPrestamo pSolicitud);
     }
 }

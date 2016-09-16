@@ -9,5 +9,15 @@ namespace Ej3
     class EvaluadorSueldo : IEvaluador
     {
         private double iSueldoMinimo;
+
+        public EvaluadorSueldo (double pSueldoMinimo)
+        {
+            this.iSueldoMinimo = pSueldoMinimo;
+        }
+
+        public bool EsValida (SolicitudPrestamo pSolicitud)
+        {
+            return true; //Falta metodo
+        }
     }
 }

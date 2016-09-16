@@ -9,5 +9,15 @@ namespace Ej3
     class EvaluadorMonto : IEvaluador
     {
         private double iMontoMaximo;
+
+        public EvaluadorMonto (double pMontoMaximo)
+        {
+            this.iMontoMaximo = pMontoMaximo;
+        }
+
+        public bool EsValida(SolicitudPrestamo pSolicitud)
+        {
+            return true; //falta metodo
+        }
     }
 }
