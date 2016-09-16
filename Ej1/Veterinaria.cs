@@ -8,5 +8,12 @@ namespace Ej1
 {
     class Veterinaria
     {
+
+		public void AceptarAnimales(Animal[] pAnimales){
+			foreach (Animal animal in pAnimales) {
+				animal.HacerRuido ();
+			}
+		}
+
     }
 }
