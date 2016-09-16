@@ -8,5 +8,9 @@ namespace Ej1
 {
     class Veterinaria
     {
+        public void AceptarAnimales(Animal[] pAnimales)
+        {
+
+        }
     }
 }

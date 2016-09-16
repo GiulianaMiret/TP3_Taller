@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Ej1
 {
-    public abstract class Animal
+    public interface Animal
+    {
+
+    }
+    
+    
+    /*public abstract class Animal
     {
         public abstract void HacerRuido();
 
@@ -20,4 +26,5 @@ namespace Ej1
             throw new System.ArgumentException("Saltando");
         }
     }
+*/
 }
