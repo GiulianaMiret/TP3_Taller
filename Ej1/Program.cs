@@ -10,6 +10,10 @@ namespace Ej1
     {
         static void Main(string[] args)
         {
+            Perro perro = new Perro();
+            Gato gato = new Gato();
+            Veterinaria.AceptarAnimales(new Animal[]{perro, gato});
+            Console.ReadKey();
         }
     }
 }
