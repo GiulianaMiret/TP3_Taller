@@ -2,9 +2,9 @@
 
 EJ1: Terminado.
 
-EJ2: En proceso...
+EJ2: Terminado.
 
-EJ3: -
+EJ3: En proceso...
 
 EJ4: -
 
