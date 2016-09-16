@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    class EvaluadorSueldo
+    class EvaluadorSueldo : IEvaluador
     {
+        private double iSueldoMinimo;
     }
 }

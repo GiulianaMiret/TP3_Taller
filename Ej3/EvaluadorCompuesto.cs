@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    class EvaluadorCompuesto
+    class EvaluadorCompuesto : IEvaluador
     {
+        private IEvaluador iEvaluadores;
+
+        public EvaluadorCompuesto()
+        {
+            
+        }
+
+        public bool EsValida(SolicitudPrestamo pSolicitud)
+        {
+            return true;    //falta el metodo
+        }
+
+        public void AgregarEvaluador (IEvaluador pEvaluador)
+        {
+            //Falta el metodo
+        }
     }
 }

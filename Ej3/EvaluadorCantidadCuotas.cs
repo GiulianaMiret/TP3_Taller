@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    class EvaluadorCantidadCuotas
+    class EvaluadorCantidadCuotas : IEvaluador
     {
+        private int iCantidadMaximaCuotas;
     }
 }

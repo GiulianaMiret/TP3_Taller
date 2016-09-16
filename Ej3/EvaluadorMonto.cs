@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    class EvaluadorMonto
+    class EvaluadorMonto : IEvaluador
     {
+        private double iMontoMaximo;
     }
 }

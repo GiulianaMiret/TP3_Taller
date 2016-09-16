@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    class EvaluadorEdad
+    class EvaluadorEdad : IEvaluador
     {
     }
 }
