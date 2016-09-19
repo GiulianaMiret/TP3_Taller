@@ -12,7 +12,7 @@ namespace Ej3
         private string iNombre;
         private string iApellido;
 		private Empleo iEmpleo;
-		private int iTipoCliente;
+		private TipoCliente iTipoCliente;
         private DateTime iFechaNacimiento;
 
 		public Cliente(string pNombre, string pApellido, DateTime pFechaNacimiento, Empleo pEmpleo)

@@ -17,7 +17,15 @@ namespace Ej3
 
         public bool EsValida (SolicitudPrestamo pSolicitud)
         {
-            return true; //Falta el metodo
+            // 6 meses minimo
+            //DateTime fechaActual = DateTime.Today;
+            //TimeSpan antiguedad = pSolicitud.Cliente.FechaNacimiento.Subtract(DateTime.Today);
+            //System.TimeSpan antiguedad = fechaActual.Subtract(pSolicitud.Cliente.Empleo.FechaIngreso);
+            int año = DateTime.Today.Year - pSolicitud.Cliente.Empleo.FechaIngreso.Year;
+            int mes = DateTime.Today.Month - pSolicitud.Cliente.Empleo.FechaIngreso.Month;
+            if (mes > 5 || año > 0) { return true; }
+            else return false;
+            //return true;
         }
     }
 }

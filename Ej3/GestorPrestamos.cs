@@ -8,5 +8,16 @@ namespace Ej3
 {
     class GestorPrestamos
     {
+        private IEvaluador iEvaluadorPorCliente;
+
+        public GestorPrestamos ()
+        {
+            //falta
+        }
+
+        public bool EsValida (SolicitudPrestamo pSolicitud)
+        {
+            //falta
+        }
     }
 }

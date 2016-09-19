@@ -19,7 +19,9 @@ namespace Ej3
 
         public bool EsValida (SolicitudPrestamo pSolicitud)
         {
-            return true; //falta el metodo
+            int año = DateTime.Today.Year - pSolicitud.Cliente.FechaNacimiento.Year;
+            if (año > 17 && año < 76) { return true; }
+            else return false;
         }
     }
 }
