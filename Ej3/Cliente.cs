@@ -42,5 +42,10 @@ namespace Ej3
 		{
 			get { return this.iEmpleo; }
 		}
+
+        public TipoCliente TipoCliente
+        {
+            get { return this.iTipoCliente; }
+        }
     }
 }

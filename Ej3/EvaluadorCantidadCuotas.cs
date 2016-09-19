@@ -18,7 +18,7 @@ namespace Ej3
         public bool EsValida (SolicitudPrestamo pSolicitud)
         {
             switch (pSolicitud.Cliente.TipoCliente)
-                case TipoCliente.NoCliente: 
+                case TipoCliente.NoCliente :  
         }
     }
 }
