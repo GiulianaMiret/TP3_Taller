@@ -17,7 +17,22 @@ namespace Ej3
 
         public bool EsValida(SolicitudPrestamo pSolicitud)
         {
-            return true; //falta metodo
+            switch (pSolicitud.Cliente.TipoCliente)
+            {
+                case TipoCliente.NoCliente:
+                    if (pSolicitud.Monto <= 20000) { return true; }
+                    else return false;
+                case TipoCliente.Cliente:
+                    if (pSolicitud.CantidadCuotas <= 100000) { return true; }
+                    else return false;
+                case TipoCliente.ClienteGold:
+                    if (pSolicitud.CantidadCuotas <= 150000) { return true; }
+                    else return false;
+                case TipoCliente.ClientePremium:
+                    if (pSolicitud.CantidadCuotas <= 200000) { return true; }
+                    else return false;
+                default: return false;
+            }
         }
     }
 }

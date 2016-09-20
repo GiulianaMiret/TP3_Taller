@@ -17,7 +17,8 @@ namespace Ej3
 
         public bool EsValida (SolicitudPrestamo pSolicitud)
         {
-            return true; //Falta metodo
+            if (pSolicitud.Cliente.Empleo.Sueldo >= 5000) { return true; }
+            else return false;
         }
     }
 }
