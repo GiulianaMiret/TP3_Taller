@@ -17,7 +17,7 @@ namespace Ej3
 
         public bool EsValida (SolicitudPrestamo pSolicitud)
         {
-            //falta
+            return true;//falta
         }
     }
 }
