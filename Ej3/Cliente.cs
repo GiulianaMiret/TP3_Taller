@@ -21,6 +21,7 @@ namespace Ej3
 			this.iApellido = pApellido;
 			this.iFechaNacimiento = pFechaNacimiento;
 			this.iEmpleo = pEmpleo;
+			this.iTipoCliente = TipoCliente.NoCliente;
 		}
 
 		public string Nombre
