@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace Ej4
 {
-    class FabricaEncriptadores
+    class FabricaEncriptadores : Singleton
     {
-        private FabricaEncriptadores cinstancia;
-        private 
+        // tiene uno o muchos IEncriptadoes por cada tipo de cadena
+        private Dictionary<cadena, IEncriptador> iEncroptadores = new Dictionary<cadena, IEncriptador>();
+
+        public FabricaEncriptadores()
+        {
+           
+        }
+
+        public bool EsValida(SolicitudPrestamo pSolicitud)
+        {
+            return iEvaluadorPorCliente[pSolicitud.Cliente.TipoCliente].EsValida(pSolicitud);
+        }
 
     }
 }
