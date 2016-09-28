@@ -63,11 +63,7 @@ namespace Ej3
 
         public bool EsValida (SolicitudPrestamo pSolicitud)
         {
-<<<<<<< HEAD
-            return true;//falta
-=======
 			return iEvaluadorPorCliente[pSolicitud.Cliente.TipoCliente].EsValida(pSolicitud);
->>>>>>> 5d251a6... Termine EvaluadorCompuesto y Gestor de Prestamos. Verificar ejecutandolo.
         }
     }
 }
