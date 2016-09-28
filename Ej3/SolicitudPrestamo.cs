@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    class SolicitudPrestamo
+    public class SolicitudPrestamo
     {
         private double iMonto;
         private int iCantidadCuotas;

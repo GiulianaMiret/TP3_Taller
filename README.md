@@ -4,8 +4,8 @@ EJ1: Terminado.
 
 EJ2: Terminado.
 
-EJ3: En proceso...
+EJ3: Ya casi...
 
-EJ4: -
+EJ4: En proceso...
 
 EJ5: -
