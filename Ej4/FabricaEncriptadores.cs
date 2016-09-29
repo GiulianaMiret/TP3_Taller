@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 
 namespace Ej4
 {
-    class FabricaEncriptadores : Singleton
+    class FabricaEncriptadores
     {
         // tiene uno o muchos IEncriptadoes por cada tipo de cadena
-        private Dictionary<cadena, IEncriptador> iEncroptadores = new Dictionary<cadena, IEncriptador>();
+        private FabricaEncriptadores cintance;
+        private static readonly Lazy<FabricaEncriptadores> cinstance = new Lazy<FabricaEncriptadores>(() => new FabricaEncriptadores());
+        //private static readonly object cSynch = new object();
 
-        public FabricaEncriptadores()
+        private FabricaEncriptadores() { }
+
+        public static FabricaEncriptadores Instance
         {
-           
+            get
+            {
+                return cinstance;
+            }
         }
 
-        public bool EsValida(SolicitudPrestamo pSolicitud)
-        {
-            return iEvaluadorPorCliente[pSolicitud.Cliente.TipoCliente].EsValida(pSolicitud);
-        }
+ 
 
     }
 }
