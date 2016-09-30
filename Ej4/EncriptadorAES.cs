@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace Ej4
 {
-     class EncriptadorAES : Encriptador
+     public class EncriptadorAES : Encriptador
     {
-        public EncriptadorAES 
-            {
-              this Encriptador("AES");
-            }
+        public EncriptadorAES(string pNombre) : base("AES") { } 
+            
 
-        public string Encriptar(string pCadena)
+        public override string Encriptar(string pCadena)
         {
             string resultado = string.Empty;
             byte[] encryted = System.Text.Encoding.Unicode.GetBytes(pCadena);
             resultado = Convert.ToBase64String(encryted);
             return resultado; //Ver bien eso nose si esta  bien copy-paste.
-        }
-        public string Desencriptar(string pCadena)
+        } 
+
+        public override string Desencriptar(string pCadena)
         {
             string resultado = string.Empty;
             byte[] decryted = Convert.FromBase64String(pCadena);

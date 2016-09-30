@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ej4
 {
-     class Encriptador : IEncriptador
+     public abstract class Encriptador : IEncriptador
     {
         private string iNombre;
 
@@ -15,15 +15,13 @@ namespace Ej4
             this.iNombre = pNombre;
         }
 
-        public string Encriptar(string pCadena)
+        public String Nombre
         {
-
-        }
-        public string Desencriptar(string pCadena)
-        {
-            
-
+            get { return this.iNombre; }
         }
 
-        }
+        public abstract string Encriptar(string pCadena);
+        public abstract string Desencriptar(string pCadena);
+
+    }
 }
