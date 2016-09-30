@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ej4
 {
-    class EncriptadorCesar
+    class EncriptadorCesar : Encriptador
     {
     }
 }
