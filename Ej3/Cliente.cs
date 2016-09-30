@@ -47,6 +47,7 @@ namespace Ej3
         public TipoCliente TipoCliente
         {
             get { return this.iTipoCliente; }
+            set { this.iTipoCliente = value; }
         }
     }
 }

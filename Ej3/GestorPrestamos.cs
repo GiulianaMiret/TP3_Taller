@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ej3
 {
-    class GestorPrestamos
+    public class GestorPrestamos
     {
 		// private IEvaluador iEvaluadorPorCliente;
 		// Este diccionario contiene uno o muchos IEvaluadores por cada tipo cliente
