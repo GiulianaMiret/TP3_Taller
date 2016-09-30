@@ -9,8 +9,8 @@ namespace Ej4
     class FabricaEncriptadores
     {
         // tiene uno o muchos IEncriptadoes por cada tipo de cadena
-        private FabricaEncriptadores cIntance;
-        private static readonly Lazy<FabricaEncriptadores> cInstance = new Lazy<FabricaEncriptadores>(() => new FabricaEncriptadores());
+        //private FabricaEncriptadores cIntance;
+        private static readonly Lazy<FabricaEncriptadores> cInstance = new Lazy<FabricaEncriptadores>(() => { return new FabricaEncriptadores(); });
         //private static readonly object cSynch = new object();
 
         private FabricaEncriptadores() { }
@@ -23,10 +23,7 @@ namespace Ej4
 
         public static FabricaEncriptadores Instance
         {
-            get
-            {
-                return cInstance;
-            }
+            get { return this.cInstance; }
         }
 
  
