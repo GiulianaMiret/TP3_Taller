@@ -15,6 +15,12 @@ namespace Ej4
 
         private FabricaEncriptadores() { }
 
+        public IEncriptador GetEncriptador(string nombre)
+        {
+            return cinstance;
+        }
+
+
         public static FabricaEncriptadores Instance
         {
             get
