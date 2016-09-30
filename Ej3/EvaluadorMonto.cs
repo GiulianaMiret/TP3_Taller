@@ -23,13 +23,13 @@ namespace Ej3
                     if (pSolicitud.Monto <= 20000) { return true; }
                     else return false;
                 case TipoCliente.Cliente:
-                    if (pSolicitud.CantidadCuotas <= 100000) { return true; }
+                    if (pSolicitud.Monto <= 100000) { return true; }
                     else return false;
                 case TipoCliente.ClienteGold:
-                    if (pSolicitud.CantidadCuotas <= 150000) { return true; }
+					if (pSolicitud.Monto <= 150000) { return true; }
                     else return false;
                 case TipoCliente.ClientePremium:
-                    if (pSolicitud.CantidadCuotas <= 200000) { return true; }
+					if (pSolicitud.Monto <= 200000) { return true; }
                     else return false;
                 default: return false;
             }
