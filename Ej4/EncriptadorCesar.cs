@@ -19,7 +19,7 @@ namespace Ej4
         public override string Encriptar(string pCadena)
         {
             String frase = "";
-            if (this.iDesplazamiento > 0 && this.iDesplazamiento < pCadena.Length)
+            if (this.iDesplazamiento > 0 && this.iDesplazamiento < abc.Length)
             {                        //recorre caracter a caracter el mensaje a cifrar
                 for (int i = 0; i < pCadena.Length; i++)
                 {
@@ -27,11 +27,11 @@ namespace Ej4
                     if (posCaracter != -1) //el caracter existe en la variable abc
                     {
                         int pos = posCaracter + this.iDesplazamiento;
-                        while (pos >= pCadena.Length)
+                        while (pos >= abc.Length)
                         {
-                            pos = pos - pCadena.Length;
+                            pos = pos - abc.Length;
                         } //concatena al mensaje cifrado
-                        frase += pCadena[pos];
+                        frase += abc[pos];
                     }
                     else//si no existe el caracter no se cifra
                     {
@@ -41,6 +41,7 @@ namespace Ej4
             }
             return frase;
         }
+
         public override string Desencriptar(string pCadena)
         {
             String frase = "";
@@ -67,6 +68,7 @@ namespace Ej4
             }
             return frase;
         }
+
         static int PosABC(char caracter)
         {
             for (int i = 0; i < abc.Length; i++)

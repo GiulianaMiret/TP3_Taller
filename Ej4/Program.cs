@@ -10,6 +10,12 @@ namespace Ej4
     {
         static void Main(string[] args)
         {
+            EncriptadorCesar en = new EncriptadorCesar("Cesar", 2);
+            
+            Console.WriteLine(en.Encriptar("Hola"));
+            
+            Console.WriteLine(en.Desencriptar("Jqñc"));
+            Console.ReadKey();
         }
     }
 }
