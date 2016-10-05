@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DAEA7DC0-752E-4E5A-B64F-476871358020}</ProjectGuid>
+    <ProjectGuid>{3ACFDBE2-DF3E-4266-A364-4544616611C6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ej5</RootNamespace>
@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EncriptadorAES.cs" />
+    <Compile Include="Encriptador.cs" />
+    <Compile Include="EncriptadorCesar.cs" />
+    <Compile Include="EncriptadorNulo.cs" />
+    <Compile Include="EncriptadorRSA.cs" />
+    <Compile Include="FabricaEncriptadores.cs" />
+    <Compile Include="IEncriptador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

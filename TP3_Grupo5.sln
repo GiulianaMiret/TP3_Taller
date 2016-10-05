@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ej4", "Ej4\Ej4.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorPrestamoTests", "GestorPrestamoTests\GestorPrestamoTests.csproj", "{BBA0B802-2B89-47E2-9FF2-A199E0D6AF18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ej5", "Ej5\Ej5.csproj", "{3ACFDBE2-DF3E-4266-A364-4544616611C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BBA0B802-2B89-47E2-9FF2-A199E0D6AF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBA0B802-2B89-47E2-9FF2-A199E0D6AF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBA0B802-2B89-47E2-9FF2-A199E0D6AF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACFDBE2-DF3E-4266-A364-4544616611C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACFDBE2-DF3E-4266-A364-4544616611C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACFDBE2-DF3E-4266-A364-4544616611C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACFDBE2-DF3E-4266-A364-4544616611C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
