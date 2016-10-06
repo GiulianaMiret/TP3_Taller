@@ -10,7 +10,7 @@ namespace Ej3
     {
         static void Main(string[] args)
         {
-			Fachada fachada = new Fachada();
+			var fachada = new Fachada();
 			Console.Clear();
 			Console.WriteLine("Seleccione opcion: ");
 			Console.WriteLine("\t1. Solicitar prestamo");
@@ -25,7 +25,7 @@ namespace Ej3
 					{
 						Console.Write("Ingrese ID de Cliente: ");
 						int idCliente = Convert.ToInt32(Console.ReadLine());
-						while (fachada.existeCliente(idCliente))
+						while (!fachada.existeCliente(idCliente))
 						{
 							Console.WriteLine("El cliente no es valido. Intente de nuevo.");
 							Console.Write("Ingrese ID de Cliente: ");
@@ -37,7 +37,7 @@ namespace Ej3
 						Console.Write("Ingrese cuotas a solicitar: ");
 						int cuotas = Convert.ToInt32(Console.ReadLine());
 
-						if (fachada.SolicitudPrestamo(idCliente, monto, cuotas){
+						if (fachada.SolicitudPrestamo(idCliente, monto, cuotas)){
 							Console.WriteLine("Se ha aceptado su solicitud de prestamo.");
 						}
 						else {
