@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ej4
+namespace Ej5
 {
     // SEALED hace que la clase no pueda ser heredada
     sealed class EncriptadorNulo : Encriptador

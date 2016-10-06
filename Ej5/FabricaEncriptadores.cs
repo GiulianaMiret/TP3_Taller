@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ej4
+namespace Ej5
 {
     class FabricaEncriptadores
     {
@@ -15,7 +15,7 @@ namespace Ej4
 
         private Dictionary<string, IEncriptador> iEncriptadores;
         private static readonly Lazy<FabricaEncriptadores> cInstancia;
-        
+
         static FabricaEncriptadores()
         {
             cInstancia = new Lazy<FabricaEncriptadores>(() => { return new FabricaEncriptadores(); });
@@ -31,7 +31,7 @@ namespace Ej4
             if (cInstancia == null) { cInstancia = new EncriptadorNulo(nombre); }
             return cInstancia;
         }
-        
+
 
         public static FabricaEncriptadores Instancia
         {

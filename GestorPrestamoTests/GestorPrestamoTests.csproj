@@ -51,6 +51,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="EncriptadoresTests.cs" />
     <Compile Include="GestorPrestamosTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +59,10 @@
     <ProjectReference Include="..\Ej3\Ej3.csproj">
       <Project>{2F122100-9390-48C6-BB3F-D021EBED4FB3}</Project>
       <Name>Ej3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ej4\Ej4.csproj">
+      <Project>{f670792e-a6f4-4985-b2f6-a9a19059a542}</Project>
+      <Name>Ej4</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
