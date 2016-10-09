@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ej4;
+using Ej5;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestorPrestamo.Tests
+namespace Unit.Tests
 {
     [TestClass()]
     public class EncriptadoresTests
@@ -37,6 +37,20 @@ namespace GestorPrestamo.Tests
         {
             EncriptadorCesar encrip = new EncriptadorCesar("Cesar", 2);
             Assert.AreEqual("Hola", encrip.Desencriptar("Jqñc"));
+        }
+
+        [TestMethod()]
+        public void TransposicionEncriptarTest()
+        {
+            EncriptadorTransposicion encrip = new EncriptadorTransposicion("Transposicion");
+            Assert.AreEqual("aloH", encrip.Encriptar("Hola"));
+        }
+
+        [TestMethod()]
+        public void TransposicionDesencriptarTest()
+        {
+            EncriptadorTransposicion encrip = new EncriptadorTransposicion("Transposicion");
+            Assert.AreEqual("Hola", encrip.Desencriptar("aloH"));
         }
     }
 }

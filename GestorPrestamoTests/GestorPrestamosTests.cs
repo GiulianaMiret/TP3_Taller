@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestorPrestamo.Tests
+namespace Unit.Tests
 {
     [TestClass()]
     public class GestorPrestamosTests

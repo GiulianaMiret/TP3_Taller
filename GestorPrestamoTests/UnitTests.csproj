@@ -60,9 +60,9 @@
       <Project>{2F122100-9390-48C6-BB3F-D021EBED4FB3}</Project>
       <Name>Ej3</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ej4\Ej4.csproj">
-      <Project>{f670792e-a6f4-4985-b2f6-a9a19059a542}</Project>
-      <Name>Ej4</Name>
+    <ProjectReference Include="..\Ej5\Ej5.csproj">
+      <Project>{3acfdbe2-df3e-4266-a364-4544616611c6}</Project>
+      <Name>Ej5</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
