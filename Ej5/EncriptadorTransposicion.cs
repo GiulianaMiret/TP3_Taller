@@ -8,7 +8,7 @@ namespace Ej5
 {
     public class EncriptadorTransposicion : Encriptador
     {
-        public EncriptadorTransposicion(string pNombre) : base("Transposicion") { }
+        public EncriptadorTransposicion() : base("Transposicion") { }
 
         public override string Encriptar(string palabra)
         {

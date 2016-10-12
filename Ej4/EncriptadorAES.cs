@@ -8,7 +8,7 @@ namespace Ej4
 {
      public class EncriptadorAES : Encriptador
     {
-        public EncriptadorAES(string pNombre) : base("AES") { } 
+        public EncriptadorAES() : base("AES") { } 
             
 
         public override string Encriptar(string pCadena)

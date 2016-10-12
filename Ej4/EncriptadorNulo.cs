@@ -9,7 +9,7 @@ namespace Ej4
     // SEALED hace que la clase no pueda ser heredada
     sealed class EncriptadorNulo : Encriptador
     {
-        public EncriptadorNulo(string pNombre) : base("Nulo") { }
+        public EncriptadorNulo() : base("Nulo") { }
 
         public override string Encriptar(string pCadena)
         {

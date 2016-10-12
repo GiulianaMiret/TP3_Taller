@@ -10,7 +10,7 @@ namespace Ej5
     {
         static string abc = "abcdefghijklmñnopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890_-+,#$%&/()=¿?¡!|,.;:{}[]";
         private int iDesplazamiento;
-        public EncriptadorCesar(string pNombre, int pDesplazamiento) : base("CESAR")
+        public EncriptadorCesar(int pDesplazamiento) : base("CESAR")
         {
             this.iDesplazamiento = pDesplazamiento;
         }

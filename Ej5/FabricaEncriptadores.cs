@@ -28,7 +28,7 @@ namespace Ej5
         public IEncriptador GetEncriptador(string nombre)
         {
             IEncriptador cInstancia = iEncriptadores[nombre];
-            if (cInstancia == null) { cInstancia = new EncriptadorNulo(nombre); }
+            if (cInstancia == null) { cInstancia = new EncriptadorNulo(); }
             return cInstancia;
         }
 

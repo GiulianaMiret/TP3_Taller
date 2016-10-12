@@ -14,42 +14,42 @@ namespace Unit.Tests
         [TestMethod()]
         public void AESEncriptarTest()
         {
-            EncriptadorAES encrip = new EncriptadorAES("AES");
+            EncriptadorAES encrip = new EncriptadorAES();
             Assert.AreEqual("SABvAGwAYQA=", encrip.Encriptar("Hola"));
         }
 
         [TestMethod()]
         public void AESDesencriptarTest()
         {
-            EncriptadorAES encrip = new EncriptadorAES("AES");
+            EncriptadorAES encrip = new EncriptadorAES();
             Assert.AreEqual("Hola", encrip.Desencriptar("SABvAGwAYQA="));
         }
 
         [TestMethod()]
         public void CesarEncriptarTest()
         {
-            EncriptadorCesar encrip = new EncriptadorCesar("Cesar", 2);
+            EncriptadorCesar encrip = new EncriptadorCesar(2);
             Assert.AreEqual("Jqñc", encrip.Encriptar("Hola"));
         }
 
         [TestMethod()]
         public void CesarDesencriptarTest()
         {
-            EncriptadorCesar encrip = new EncriptadorCesar("Cesar", 2);
+            EncriptadorCesar encrip = new EncriptadorCesar(2);
             Assert.AreEqual("Hola", encrip.Desencriptar("Jqñc"));
         }
 
         [TestMethod()]
         public void TransposicionEncriptarTest()
         {
-            EncriptadorTransposicion encrip = new EncriptadorTransposicion("Transposicion");
+            EncriptadorTransposicion encrip = new EncriptadorTransposicion();
             Assert.AreEqual("aloH", encrip.Encriptar("Hola"));
         }
 
         [TestMethod()]
         public void TransposicionDesencriptarTest()
         {
-            EncriptadorTransposicion encrip = new EncriptadorTransposicion("Transposicion");
+            EncriptadorTransposicion encrip = new EncriptadorTransposicion();
             Assert.AreEqual("Hola", encrip.Desencriptar("aloH"));
         }
     }
