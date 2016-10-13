@@ -52,5 +52,19 @@ namespace Unit.Tests
             EncriptadorTransposicion encrip = new EncriptadorTransposicion();
             Assert.AreEqual("Hola", encrip.Desencriptar("aloH"));
         }
+
+        //[TestMethod()]
+        //public void RSAEncriptarTest()
+        //{
+        //    EncriptadorRSA encrip = new EncriptadorRSA();
+        //    Assert.AreEqual("-----", encrip.Encriptar("Hola"));
+        //}
+
+        //[TestMethod()]
+        //public void RSADesencriptarTest()
+        //{
+        //    EncriptadorRSA encrip = new EncriptadorRSA();
+        //    Assert.AreEqual("-----", encrip.Desencriptar("aloH"));
+        //}
     }
 }

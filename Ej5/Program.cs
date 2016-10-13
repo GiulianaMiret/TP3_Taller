@@ -27,7 +27,7 @@ namespace Ej5
                     Console.WriteLine("Escriba la palabra que desea Encriptar:");
                     palabra = Console.ReadLine();
                     Console.Clear();
-                    Console.WriteLine("Qué metodo utilizar para Encriptar?\n\n\t1: AES\n\t2: Cesar\n\t3: Nulo\n\t4: Transposicion\n\n\t5: Salir");
+                    Console.WriteLine("Qué metodo utilizar para Encriptar?\n\n\t1: AES\n\t2: Cesar\n\t3: Nulo\n\t4: Transposicion\n\t5: RSA\n\n\t6: Salir");
                     opEnc = Console.ReadLine();
                     Console.Clear();
                     switch (opEnc)
@@ -51,6 +51,10 @@ namespace Ej5
                             Console.WriteLine("Metodo:\n\tTransposicion\nFrase:\n\t{0} \nFrase encriptada:\n\t{1}", palabra, palabra = fachada.EncriptarTranspuesto(palabra));
                             Console.ReadKey();
                             goto out1;
+                        case "5":
+                            Console.WriteLine("Metodo:\n\tRSA\nFrase:\n\t{0} \nFrase encriptada:\n\t{1}", palabra, palabra = fachada.EncriptarRSA(palabra));
+                            Console.ReadKey();
+                            goto out1;
                         default: goto out1;
                     }
                 case "2":
@@ -69,7 +73,7 @@ namespace Ej5
                     Console.WriteLine("Escriba la palabra que desea Desencriptar:");
                     palabra = Console.ReadLine();
                     Console.Clear();
-                    Console.WriteLine("Qué metodo utilizar para Desencriptar?\n\n\t1: AES\n\t2: Cesar\n\t3: Nulo\n\t4: Transposicion\n\n\t5: Salir");
+                    Console.WriteLine("Qué metodo utilizar para Desencriptar?\n\n\t1: AES\n\t2: Cesar\n\t3: Nulo\n\t4: Transposicion\n\t5: RSA\n\n\t6: Salir");
                     op = Console.ReadLine();
                     out2:
                     Console.Clear();
@@ -94,6 +98,10 @@ namespace Ej5
                             goto out1;
                         case "4":
                             Console.WriteLine("Metodo:\n\tTransposicion\nFrase encriptada:\n\t{0}\nFrase desencriptada:\n\t{1}", palabra, palabra = fachada.DesencriptarTranspuesto(palabra));
+                            Console.ReadKey();
+                            goto out1;
+                        case "5":
+                            Console.WriteLine("Metodo:\n\tRSA\nFrase encriptada:\n\t{0}\nFrase desencriptada:\n\t{1}", palabra, palabra = fachada.DesencriptarRSA(palabra));
                             Console.ReadKey();
                             goto out1;
                         default: goto out1;

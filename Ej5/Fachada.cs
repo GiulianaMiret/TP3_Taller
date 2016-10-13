@@ -56,5 +56,17 @@ namespace Ej5
             EncriptadorTransposicion encriptador = new EncriptadorTransposicion();
             return (encriptador.Desencriptar(palabra));
         }
+
+        public string EncriptarRSA(string palabra)
+        {
+            EncriptadorRSA encriptador = new EncriptadorRSA();
+            return (encriptador.Encriptar(palabra));
+        }
+
+        public string DesencriptarRSA(string palabra)
+        {
+            EncriptadorRSA encriptador = new EncriptadorRSA();
+            return (encriptador.Desencriptar(palabra));
+        }
     }
 }

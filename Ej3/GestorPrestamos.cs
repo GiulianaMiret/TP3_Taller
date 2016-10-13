@@ -10,7 +10,7 @@ namespace Ej3
     {
 		// private IEvaluador iEvaluadorPorCliente;
 		// Este diccionario contiene uno o muchos IEvaluadores por cada tipo cliente
-		private Dictionary<TipoCliente, IEvaluador> iEvaluadorPorCliente;
+		private readonly Dictionary<TipoCliente, IEvaluador> iEvaluadorPorCliente;
 
         public GestorPrestamos ()
         {
