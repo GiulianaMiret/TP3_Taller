@@ -14,24 +14,38 @@ namespace Ej5
 
 	public class EncriptadorRSA : Encriptador
 	{
-        private string key = "34n5jk2b354jkhjk345";
-        private RSACryptoServiceProvider provider = new RSACryptoServiceProvider();
-        public RSAParameters parameters = new RSAParameters();
+        private RSACryptoServiceProvider provider;
+		public RSAParameters parameters;
+		private string privateKey;
+		public string publicKey;
 
         public EncriptadorRSA() : base("RSA")
         {
-            provider.ImportParameters(parameters);
+			provider = new RSACryptoServiceProvider(1112);
+			this.privateKey = provider.ToXmlString(true);
+			this.publicKey = provider.ToXmlString(false);
         }
 
         public override string Encriptar(string pCadena)
         {
-            var cadenaEncriptada = provider.Encrypt(System.Text.Encoding.UTF8.GetBytes(pCadena), true);
-            return System.Text.Encoding.UTF8.GetString(cadenaEncriptada);
+			provider = new RSACryptoServiceProvider();
+			provider.FromXmlString(publicKey);
+
+			// Proceso la cadena
+			var cadena = System.Text.Encoding.UTF8.GetBytes(pCadena);
+			var cadenaCifrada = provider.Encrypt(cadena, false);
+
+			return Convert.ToBase64String(cadenaCifrada);
         }
 
         public override string Desencriptar(string pCadena)
         {
-            return System.Text.Encoding.UTF8.GetString(provider.Decrypt(System.Text.Encoding.UTF8.GetBytes(pCadena), true));
+			provider = new RSACryptoServiceProvider();
+			provider.FromXmlString(privateKey);
+
+			var cadenaCifrada = Convert.FromBase64String(pCadena);
+			var cadenaDesencriptada = provider.Decrypt(cadenaCifrada, false);
+			return System.Text.Encoding.UTF8.GetString(cadenaDesencriptada);
         }
     }
 }
