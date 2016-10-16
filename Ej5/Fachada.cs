@@ -8,7 +8,11 @@ namespace Ej5
 {
     class Fachada
     {
-
+        private EncriptadorRSA eRSA;
+        public Fachada()
+        {
+            eRSA = new EncriptadorRSA();
+        }
         public string EncriptarAES(string palabra)
         {
             EncriptadorAES encriptador = new EncriptadorAES();
@@ -59,14 +63,12 @@ namespace Ej5
 
         public string EncriptarRSA(string palabra)
         {
-            EncriptadorRSA encriptador = new EncriptadorRSA();
-            return (encriptador.Encriptar(palabra));
+            return (eRSA.Encriptar(palabra));
         }
 
         public string DesencriptarRSA(string palabra)
         {
-            EncriptadorRSA encriptador = new EncriptadorRSA();
-            return (encriptador.Desencriptar(palabra));
+            return (eRSA.Desencriptar(palabra));
         }
     }
 }
